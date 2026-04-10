@@ -60,6 +60,24 @@
 
       document.body.classList.add('watch-mode');
       document.body.appendChild(style);
+
+      // Truncate direction text to 10 chars and re-run on widget refresh
+      function truncateDirections() {
+        table.querySelectorAll('tr').forEach(function(tr) {
+          var td = tr.querySelector('td:nth-child(2)');
+          if (!td) return;
+          // Get the raw text, ignoring child elements' structure
+          var text = td.textContent.trim();
+          if (text.length > 10) {
+            td.textContent = text.substring(0, 10);
+          }
+        });
+      }
+      truncateDirections();
+
+      // Re-truncate when widget refreshes data (childList only, no attributes)
+      new MutationObserver(truncateDirections)
+        .observe(table, { childList: true, subtree: true });
     }
 
     fixOnce();
