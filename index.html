@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=352, user-scalable=no">
+  <meta name="viewport" content="width=180, user-scalable=no">
   <title>Abfahrten Carl-Amery-Platz</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -58,7 +58,7 @@
 
           // Col 1: Richtung (truncate to 10 chars)
           var dir = cells[1].textContent.trim();
-          if (dir.length > 10) dir = dir.substring(0, 10);
+          if (dir.length > 15) dir = dir.substring(0, 15);
 
           // Col 4: Live time (or col 3 Abfahrt as fallback)
           var time = cells[4].textContent.trim() || cells[3].textContent.trim();
