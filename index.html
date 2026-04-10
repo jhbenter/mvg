@@ -4,146 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>Abfahrten Carl-Amery-Platz</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: #000;
-      color: #fff;
-      font-family: -apple-system, system-ui, sans-serif;
-      -webkit-text-size-adjust: none;
-      overflow-x: hidden;
-    }
-  </style>
 </head>
-<body>
+<body style="margin:0;padding:0;background:#000">
   <div class="mvv-departure-monitor" monitor-configuration="eyJsYW5ndWFnZSI6eyJkZXBhcnR1cmUiOiJBYmZhaHJ0IiwidHJhaW5TdG9wcyI6IkhhbHRlc3RlbGxlbiIsImRpcmVjdGlvbiI6IlJpY2h0dW5nIiwiZm9vdGVyTm90ZSI6IqkgQ29weXJpZ2h0IiwiZm9vdGVyVGV4dCI6IldlaXRlcmUgRmFocnBsYW5hdXNr/G5mdGUgdW50ZXIgd3d3Lm12di1hdXNrdW5mdC5kZSBvZGVyIG1pdCBkZXIgTVZWLUFwcCIsImhlYWRlclRleHQiOiJBYmZhaHJ0ZW4gZvxyIGhldXRlLCAiLCJsYW5ndWFnZSI6ImRlIiwibGluZSI6IkxpbmllIiwibGl2ZSI6IkxpdmUiLCJzdG9wIjoiSGFsdGVzdGVsbGUiLCJ0cmFjayI6IkdsZWlzIn0sImlzRnVsbHNjcmVlbiI6ZmFsc2UsInN0YXRpb25zIjpbeyJzdGF0aW9uIjp7InVzYWdlIjoic2YiLCJ0eXBlIjoiYW55IiwibmFtZSI6Ik38bmNoZW4sIENhcmwtQW1lcnktUGxhdHoiLCJzdGF0ZWxlc3MiOiI5MTAwMDE0OSIsImFueVR5cGUiOiJzdG9wIiwic29ydCI6IjIiLCJxdWFsaXR5IjoiMjIzIiwiYmVzdCI6IjEiLCJvYmplY3QiOiJDYXJsLUFtZXJ5LVBsYXR6IiwibWFpbkxvYyI6Ik38bmNoZW4iLCJtb2RlcyI6IjQsNSIsInJlZiI6eyJpZCI6IjkxMDAwMTQ5IiwiZ2lkIjoiZGU6MDkxNjI6MTQ5Iiwib21jIjoiOTE2MjAwMCIsInBsYWNlSUQiOiIxIiwicGxhY2UiOiJN/G5jaGVuIiwiY29vcmRzIjoiMTI4OTY5MC4wMDAwMCw1ODcyOTUyLjAwMDAwIn0sImlkIjoiZGU6MDkxNjI6MTQ5In0sImxpbmVzIjpbeyJudW1iZXIiOiIyNSIsInN5bWJvbCI6IjAyMDI1LnN2ZyIsImRpcmVjdGlvbiI6Ikdy/G53YWxkLCBEZXJib2xmaW5nZXIgUGwuIiwic3RhdGVsZXNzIjoic3dtOjAyMDI1Okc6SDowMTYiLCJuYW1lIjoiVHJhbSJ9LHsibnVtYmVyIjoiMjUiLCJzeW1ib2wiOiIwMjAyNS5zdmciLCJkaXJlY3Rpb24iOiJNYXgtV2ViZXItUGxhdHogKEpvaGFubmlzcGwuKSIsInN0YXRlbGVzcyI6InN3bTowMjAyNTpHOlI6MDE2IiwibmFtZSI6IlRyYW0ifSx7Im51bWJlciI6IjU4Iiwic3ltYm9sIjoiMjQwNTguc3ZnIiwiZGlyZWN0aW9uIjoiSGF1cHRiYWhuaG9mIE5vcmQiLCJzdGF0ZWxlc3MiOiJzd206MDMwNTg6RzpSOjAxNiIsIm5hbWUiOiJNZXRyb0J1cyJ9LHsibnVtYmVyIjoiNjgiLCJzeW1ib2wiOiIyNDA2OC5zdmciLCJkaXJlY3Rpb24iOiJIYXVwdGJhaG5ob2YgTm9yZCIsInN0YXRlbGVzcyI6InN3bTowMzA2ODpHOkg6MDE2IiwibmFtZSI6Ik1ldHJvQnVzIn0seyJudW1iZXIiOiJONDUiLCJzeW1ib2wiOiIzM040NS5zdmciLCJkaXJlY3Rpb24iOiJXYWxkcGVybGFjaCAoU/xkKSIsInN0YXRlbGVzcyI6InN3bTozM040NTpHOkg6MDE2IiwibmFtZSI6Ik5hY2h0QnVzIn0seyJudW1iZXIiOiJONDUiLCJzeW1ib2wiOiIzM040NS5zdmciLCJkaXJlY3Rpb24iOiJLYXJsc3BsYXR6IChTdGFjaHVzKSIsInN0YXRlbGVzcyI6InN3bTozM040NTpHOlI6MDE2IiwibmFtZSI6Ik5hY2h0QnVzIn1dLCJhbGxMaW5lcyI6W3sibnVtYmVyIjoiMjUiLCJzeW1ib2wiOiIwMjAyNS5zdmciLCJkaXJlY3Rpb24iOiJHcvxud2FsZCwgRGVyYm9sZmluZ2VyIFBsLiIsInN0YXRlbGVzcyI6InN3bTowMjAyNTpHOkg6MDE2IiwibmFtZSI6IlRyYW0ifSx7Im51bWJlciI6IjI1Iiwic3ltYm9sIjoiMDIwMjUuc3ZnIiwiZGlyZWN0aW9uIjoiTWF4LVdlYmVyLVBsYXR6IChKb2hhbm5pc3BsLikiLCJzdGF0ZWxlc3MiOiJzd206MDIwMjU6RzpSOjAxNiIsIm5hbWUiOiJUcmFtIn0seyJudW1iZXIiOiI1OCIsInN5bWJvbCI6IjI0MDU4LnN2ZyIsImRpcmVjdGlvbiI6IkhhdXB0YmFobmhvZiBOb3JkIiwic3RhdGVsZXNzIjoic3dtOjAzMDU4Okc6UjowMTYiLCJuYW1lIjoiTWV0cm9CdXMifSx7Im51bWJlciI6IjY4Iiwic3ltYm9sIjoiMjQwNjguc3ZnIiwiZGlyZWN0aW9uIjoiSGF1cHRiYWhuaG9mIE5vcmQiLCJzdGF0ZWxlc3MiOiJzd206MDMwNjg6RzpIOjAxNiIsIm5hbWUiOiJNZXRyb0J1cyJ9LHsibnVtYmVyIjoiTjQ1Iiwic3ltYm9sIjoiMzNONDUuc3ZnIiwiZGlyZWN0aW9uIjoiV2FsZHBlcmxhY2ggKFP8ZCkiLCJzdGF0ZWxlc3MiOiJzd206MzNONDU6RzpIOjAxNiIsIm5hbWUiOiJOYWNodEJ1cyJ9LHsibnVtYmVyIjoiTjQ1Iiwic3ltYm9sIjoiMzNONDUuc3ZnIiwiZGlyZWN0aW9uIjoiS2FybHNwbGF0eiAoU3RhY2h1cykiLCJzdGF0ZWxlc3MiOiJzd206MzNONDU6RzpSOjAxNiIsIm5hbWUiOiJOYWNodEJ1cyJ9XSwibGVhZFRpbWVNaW51dGVzIjowfV0sImxpbmVzIjpbXSwibWF4UmVzdWx0cyI6MTAsImZldGNoSW50ZXJ2YWxJbk1pbnV0ZXMiOjIsInNob3dOb3RpZmljYXRpb24iOnRydWV9"></div>
   <script type="text/javascript" src="https://www.mvv-muenchen.de/typo3conf/ext/sn_mvv_efa/Resources/Public/mvv-monitor/mvv-monitor.min.js"></script>
   <script>
-    function applyWatchStyles() {
-      var css = document.getElementById('watch-override');
-      if (!css) {
-        css = document.createElement('style');
-        css.id = 'watch-override';
-        document.head.appendChild(css);
-      }
-      // Columns: 1=Linie, 2=Richtung, 3=Gleis, 4=Abfahrt, 5=Live
-      // Hide Gleis + Abfahrt (columns 3+4) to save space, keep Linie + Richtung + Live
-      css.textContent = `
-        /* Hide header, footer, stop-name, notification */
-        .departure-monitor__header,
-        .departure-monitor__footer,
-        .departure-monitor__notification,
-        .departure-monitor__stop-name,
-        .departure-monitor__stop-info { display: none !important; }
+    // Wait for widget to render, then restyle once
+    function fixOnce() {
+      var table = document.querySelector('.mvv-departure-monitor table');
+      if (!table) return setTimeout(fixOnce, 500);
 
-        /* Dark background */
-        body, .mvv-departure-monitor, .departure-monitor,
-        .departure-monitor__content, .departure-monitor__table-wrapper,
-        .departure-monitor__wrapper {
-          background: #000 !important;
-          color: #fff !important;
-          border: none !important;
-          box-shadow: none !important;
-        }
+      // Inject style tag at end of body (highest cascade order)
+      var style = document.createElement('style');
+      style.textContent = [
+        // Use body.watch-mode as specificity anchor
+        'body.watch-mode .mvv-departure-monitor { background:#000 !important }',
+        'body.watch-mode .mvv-departure-monitor > div { background:#000 !important; border:none !important; box-shadow:none !important }',
 
-        /* Table */
-        .departure-monitor__table {
-          width: 100% !important;
-          border-collapse: collapse !important;
-          background: #000 !important;
-        }
+        // Hide header, footer, etc
+        'body.watch-mode [class*="header"] { display:none !important }',
+        'body.watch-mode [class*="footer"] { display:none !important }',
+        'body.watch-mode [class*="notification"] { display:none !important }',
+        'body.watch-mode [class*="stop-name"] { display:none !important }',
+        'body.watch-mode [class*="stop-info"] { display:none !important }',
 
-        /* Hide Gleis (col 3) and Abfahrt (col 4) */
-        .departure-monitor__table th:nth-child(3),
-        .departure-monitor__table td:nth-child(3),
-        .departure-monitor__table th:nth-child(4),
-        .departure-monitor__table td:nth-child(4) {
-          display: none !important;
-        }
+        // Table dark
+        'body.watch-mode table { width:100% !important; border-collapse:collapse !important; background:#000 !important }',
+        'body.watch-mode thead { display:none !important }',
+        'body.watch-mode tr { background:#000 !important }',
 
-        /* Table header */
-        .departure-monitor__table thead { display: none !important; }
+        // Hide Gleis (col3) and Abfahrt (col4)
+        'body.watch-mode td:nth-child(3) { display:none !important }',
+        'body.watch-mode th:nth-child(3) { display:none !important }',
+        'body.watch-mode td:nth-child(4) { display:none !important }',
+        'body.watch-mode th:nth-child(4) { display:none !important }',
 
-        /* All cells */
-        .departure-monitor__table td {
-          background: #000 !important;
-          color: #fff !important;
-          font-size: 14px !important;
-          padding: 6px 4px !important;
-          border: none !important;
-          border-bottom: 1px solid #222 !important;
-          vertical-align: middle !important;
-        }
+        // Linie (col1)
+        'body.watch-mode td:nth-child(1) { background:#000 !important; color:#fff !important; padding:6px 2px !important; text-align:center !important; width:44px !important; font-size:14px !important; border-bottom:1px solid #222 !important }',
 
-        .departure-monitor__table tr {
-          background: #000 !important;
-        }
+        // Richtung (col2)
+        'body.watch-mode td:nth-child(2) { background:#000 !important; color:#ccc !important; padding:6px 4px !important; font-size:12px !important; white-space:nowrap !important; overflow:hidden !important; text-overflow:ellipsis !important; max-width:120px !important; border-bottom:1px solid #222 !important }',
+        'body.watch-mode td:nth-child(2) span { color:#ccc !important }',
 
-        /* Linie (col 1) - compact */
-        .departure-monitor__table td:nth-child(1) {
-          width: 40px !important;
-          text-align: center !important;
-          padding-left: 2px !important;
-          padding-right: 2px !important;
-        }
+        // Live (col5)
+        'body.watch-mode td:nth-child(5) { background:#000 !important; color:#4f4 !important; padding:6px 4px !important; font-size:14px !important; font-weight:bold !important; text-align:right !important; white-space:nowrap !important; width:52px !important; border-bottom:1px solid #222 !important }',
+        'body.watch-mode td:nth-child(5) span { color:#4f4 !important }',
+        'body.watch-mode td:nth-child(5) a { color:#4f4 !important }',
 
-        /* Richtung (col 2) - take remaining space, truncate */
-        .departure-monitor__table td:nth-child(2) {
-          color: #ccc !important;
-          white-space: nowrap !important;
-          overflow: hidden !important;
-          text-overflow: ellipsis !important;
-          max-width: 1px !important;
-          font-size: 12px !important;
-        }
+        // Images
+        'body.watch-mode img { height:20px !important; width:auto !important; vertical-align:middle !important }',
 
-        /* Live time (col 5, now visually col 3) - bold, right-aligned */
-        .departure-monitor__table td:nth-child(5) {
-          font-weight: bold !important;
-          text-align: right !important;
-          white-space: nowrap !important;
-          width: 50px !important;
-          padding-right: 4px !important;
-        }
+        // Links
+        'body.watch-mode a { color:inherit !important; text-decoration:none !important }',
+      ].join('\n');
 
-        /* Red for live/delay times */
-        .departure-monitor__table td:nth-child(5) span,
-        .departure-monitor__table td:nth-child(5) {
-          color: #4f4 !important;
-        }
-
-        /* Line badges */
-        .departure-monitor__table img {
-          height: 20px !important;
-          width: auto !important;
-          vertical-align: middle !important;
-        }
-
-        /* Remove all borders/outlines from widget containers */
-        .mvv-departure-monitor *:not(img) {
-          border-color: #222 !important;
-          outline: none !important;
-        }
-
-        /* Links */
-        .departure-monitor__table a {
-          color: inherit !important;
-          text-decoration: none !important;
-        }
-
-        /* Scrollable on small screen */
-        .departure-monitor__table-wrapper {
-          overflow-x: hidden !important;
-          overflow-y: auto !important;
-        }
-      `;
+      document.body.classList.add('watch-mode');
+      document.body.appendChild(style);
     }
 
-    applyWatchStyles();
-    new MutationObserver(applyWatchStyles)
-      .observe(document.querySelector('.mvv-departure-monitor'), {
-        childList: true, subtree: true
-      });
+    fixOnce();
   </script>
 </body>
 </html>
