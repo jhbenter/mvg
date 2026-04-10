@@ -13,8 +13,8 @@
     #watch-table .col-dir { color: #ccc; }
     #watch-table .col-time { text-align: right; font-weight: bold; color: #4f4; white-space: nowrap; }
     .line-badge { display: inline-block; padding: 1px 4px; border-radius: 3px; font-size: 14px; color: #fff; min-width: 28px; text-align: center; }
-    /* Hide the original widget completely */
-    .mvv-departure-monitor { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
+    /* Hide the original widget - use clip not left:-9999px to avoid expanding page width */
+    .mvv-departure-monitor { position: fixed; top: 0; left: 0; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); opacity: 0; pointer-events: none; }
   </style>
 </head>
 <body>
@@ -22,10 +22,13 @@
   <div class="mvv-departure-monitor" monitor-configuration="eyJsYW5ndWFnZSI6eyJkZXBhcnR1cmUiOiJBYmZhaHJ0IiwidHJhaW5TdG9wcyI6IkhhbHRlc3RlbGxlbiIsImRpcmVjdGlvbiI6IlJpY2h0dW5nIiwiZm9vdGVyTm90ZSI6IqkgQ29weXJpZ2h0IiwiZm9vdGVyVGV4dCI6IldlaXRlcmUgRmFocnBsYW5hdXNr/G5mdGUgdW50ZXIgd3d3Lm12di1hdXNrdW5mdC5kZSBvZGVyIG1pdCBkZXIgTVZWLUFwcCIsImhlYWRlclRleHQiOiJBYmZhaHJ0ZW4gZvxyIGhldXRlLCAiLCJsYW5ndWFnZSI6ImRlIiwibGluZSI6IkxpbmllIiwibGl2ZSI6IkxpdmUiLCJzdG9wIjoiSGFsdGVzdGVsbGUiLCJ0cmFjayI6IkdsZWlzIn0sImlzRnVsbHNjcmVlbiI6ZmFsc2UsInN0YXRpb25zIjpbeyJzdGF0aW9uIjp7InVzYWdlIjoic2YiLCJ0eXBlIjoiYW55IiwibmFtZSI6Ik38bmNoZW4sIENhcmwtQW1lcnktUGxhdHoiLCJzdGF0ZWxlc3MiOiI5MTAwMDE0OSIsImFueVR5cGUiOiJzdG9wIiwic29ydCI6IjIiLCJxdWFsaXR5IjoiMjIzIiwiYmVzdCI6IjEiLCJvYmplY3QiOiJDYXJsLUFtZXJ5LVBsYXR6IiwibWFpbkxvYyI6Ik38bmNoZW4iLCJtb2RlcyI6IjQsNSIsInJlZiI6eyJpZCI6IjkxMDAwMTQ5IiwiZ2lkIjoiZGU6MDkxNjI6MTQ5Iiwib21jIjoiOTE2MjAwMCIsInBsYWNlSUQiOiIxIiwicGxhY2UiOiJN/G5jaGVuIiwiY29vcmRzIjoiMTI4OTY5MC4wMDAwMCw1ODcyOTUyLjAwMDAwIn0sImlkIjoiZGU6MDkxNjI6MTQ5In0sImxpbmVzIjpbeyJudW1iZXIiOiIyNSIsInN5bWJvbCI6IjAyMDI1LnN2ZyIsImRpcmVjdGlvbiI6Ikdy/G53YWxkLCBEZXJib2xmaW5nZXIgUGwuIiwic3RhdGVsZXNzIjoic3dtOjAyMDI1Okc6SDowMTYiLCJuYW1lIjoiVHJhbSJ9LHsibnVtYmVyIjoiMjUiLCJzeW1ib2wiOiIwMjAyNS5zdmciLCJkaXJlY3Rpb24iOiJNYXgtV2ViZXItUGxhdHogKEpvaGFubmlzcGwuKSIsInN0YXRlbGVzcyI6InN3bTowMjAyNTpHOlI6MDE2IiwibmFtZSI6IlRyYW0ifSx7Im51bWJlciI6IjU4Iiwic3ltYm9sIjoiMjQwNTguc3ZnIiwiZGlyZWN0aW9uIjoiSGF1cHRiYWhuaG9mIE5vcmQiLCJzdGF0ZWxlc3MiOiJzd206MDMwNTg6RzpSOjAxNiIsIm5hbWUiOiJNZXRyb0J1cyJ9LHsibnVtYmVyIjoiNjgiLCJzeW1ib2wiOiIyNDA2OC5zdmciLCJkaXJlY3Rpb24iOiJIYXVwdGJhaG5ob2YgTm9yZCIsInN0YXRlbGVzcyI6InN3bTowMzA2ODpHOkg6MDE2IiwibmFtZSI6Ik1ldHJvQnVzIn0seyJudW1iZXIiOiJONDUiLCJzeW1ib2wiOiIzM040NS5zdmciLCJkaXJlY3Rpb24iOiJXYWxkcGVybGFjaCAoU/xkKSIsInN0YXRlbGVzcyI6InN3bTozM040NTpHOkg6MDE2IiwibmFtZSI6Ik5hY2h0QnVzIn0seyJudW1iZXIiOiJONDUiLCJzeW1ib2wiOiIzM040NS5zdmciLCJkaXJlY3Rpb24iOiJLYXJsc3BsYXR6IChTdGFjaHVzKSIsInN0YXRlbGVzcyI6InN3bTozM040NTpHOlI6MDE2IiwibmFtZSI6Ik5hY2h0QnVzIn1dLCJhbGxMaW5lcyI6W3sibnVtYmVyIjoiMjUiLCJzeW1ib2wiOiIwMjAyNS5zdmciLCJkaXJlY3Rpb24iOiJHcvxud2FsZCwgRGVyYm9sZmluZ2VyIFBsLiIsInN0YXRlbGVzcyI6InN3bTowMjAyNTpHOkg6MDE2IiwibmFtZSI6IlRyYW0ifSx7Im51bWJlciI6IjI1Iiwic3ltYm9sIjoiMDIwMjUuc3ZnIiwiZGlyZWN0aW9uIjoiTWF4LVdlYmVyLVBsYXR6IChKb2hhbm5pc3BsLikiLCJzdGF0ZWxlc3MiOiJzd206MDIwMjU6RzpSOjAxNiIsIm5hbWUiOiJUcmFtIn0seyJudW1iZXIiOiI1OCIsInN5bWJvbCI6IjI0MDU4LnN2ZyIsImRpcmVjdGlvbiI6IkhhdXB0YmFobmhvZiBOb3JkIiwic3RhdGVsZXNzIjoic3dtOjAzMDU4Okc6UjowMTYiLCJuYW1lIjoiTWV0cm9CdXMifSx7Im51bWJlciI6IjY4Iiwic3ltYm9sIjoiMjQwNjguc3ZnIiwiZGlyZWN0aW9uIjoiSGF1cHRiYWhuaG9mIE5vcmQiLCJzdGF0ZWxlc3MiOiJzd206MDMwNjg6RzpIOjAxNiIsIm5hbWUiOiJNZXRyb0J1cyJ9LHsibnVtYmVyIjoiTjQ1Iiwic3ltYm9sIjoiMzNONDUuc3ZnIiwiZGlyZWN0aW9uIjoiV2FsZHBlcmxhY2ggKFP8ZCkiLCJzdGF0ZWxlc3MiOiJzd206MzNONDU6RzpIOjAxNiIsIm5hbWUiOiJOYWNodEJ1cyJ9LHsibnVtYmVyIjoiTjQ1Iiwic3ltYm9sIjoiMzNONDUuc3ZnIiwiZGlyZWN0aW9uIjoiS2FybHNwbGF0eiAoU3RhY2h1cykiLCJzdGF0ZWxlc3MiOiJzd206MzNONDU6RzpSOjAxNiIsIm5hbWUiOiJOYWNodEJ1cyJ9XSwibGVhZFRpbWVNaW51dGVzIjowfV0sImxpbmVzIjpbXSwibWF4UmVzdWx0cyI6MTAsImZldGNoSW50ZXJ2YWxJbk1pbnV0ZXMiOjIsInNob3dOb3RpZmljYXRpb24iOnRydWV9"></div>
   <script type="text/javascript" src="https://www.mvv-muenchen.de/typo3conf/ext/sn_mvv_efa/Resources/Public/mvv-monitor/mvv-monitor.min.js"></script>
   <script>
-    // Line number -> background color
-    var lineColors = {
-      '25': '#e3007a', '58': '#ef7d00', '68': '#ef7d00',
-      'N45': '#2d3087'
+    // SVG filename -> line number + color
+    // From config: 02025.svg=Tram 25, 24058.svg=MetroBus 58, 24068.svg=MetroBus 68, 33N45.svg=NachtBus N45
+    var svgToLine = {
+      '02025': { num: '25', color: '#e3007a' },
+      '24058': { num: '58', color: '#ef7d00' },
+      '24068': { num: '68', color: '#ef7d00' },
+      '33N45': { num: 'N45', color: '#2d3087' }
     };
 
     function extractAndRebuild() {
@@ -41,9 +44,17 @@
           var cells = row.querySelectorAll('td');
           if (cells.length < 5) return;
 
-          // Col 0: Linie (get text, strip whitespace)
-          var lineText = cells[0].textContent.trim();
-          var bgColor = lineColors[lineText] || '#555';
+          // Col 0: Linie - extract from SVG filename
+          var lineText = '?';
+          var bgColor = '#555';
+          var img = cells[0].querySelector('img');
+          if (img && img.src) {
+            var match = img.src.match(/([^/]+)\.svg/);
+            if (match && svgToLine[match[1]]) {
+              lineText = svgToLine[match[1]].num;
+              bgColor = svgToLine[match[1]].color;
+            }
+          }
 
           // Col 1: Richtung (truncate to 10 chars)
           var dir = cells[1].textContent.trim();
