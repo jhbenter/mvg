@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Abfahrten Carl-Amery-Platz</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, system-ui, sans-serif;
+      font-size: 14px;
+      -webkit-text-size-adjust: none;
+      overflow-x: hidden;
+    }
+
+    /* Make the MVV widget fit the small screen */
+    .mvv-departure-monitor {
+      width: 100% !important;
+      max-width: 100vw !important;
+      overflow-x: hidden !important;
+    }
+
+    /* Override MVV widget styles for Apple Watch readability */
+    .mvv-departure-monitor * {
+      font-size: 12px !important;
+      line-height: 1.3 !important;
+    }
+
+    .mvv-departure-monitor table {
+      width: 100% !important;
+      table-layout: fixed !important;
+    }
+
+    .mvv-departure-monitor td,
+    .mvv-departure-monitor th {
+      padding: 2px 3px !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+    }
+
+    /* Hide elements that waste space on tiny screens */
+    .mvv-departure-monitor .departure-monitor__header,
+    .mvv-departure-monitor .departure-monitor__footer,
+    .mvv-departure-monitor .departure-monitor__notification {
+      display: none !important;
+    }
+
+    /* High contrast for OLED */
+    .mvv-departure-monitor .departure-monitor__table th {
+      background: #111 !important;
+      color: #ccc !important;
+    }
+
+    .mvv-departure-monitor .departure-monitor__table td {
+      background: #000 !important;
+      color: #fff !important;
+    }
+
+    .mvv-departure-monitor .departure-monitor__table tr {
+      border-bottom: 1px solid #222 !important;
+    }
+
+    /* Make line badges smaller */
+    .mvv-departure-monitor img {
+      height: 16px !important;
+      width: auto !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="mvv-departure-monitor" monitor-configuration="eyJsYW5ndWFnZSI6eyJkZXBhcnR1cmUiOiJBYmZhaHJ0IiwidHJhaW5TdG9wcyI6IkhhbHRlc3RlbGxlbiIsImRpcmVjdGlvbiI6IlJpY2h0dW5nIiwiZm9vdGVyTm90ZSI6IqkgQ29weXJpZ2h0IiwiZm9vdGVyVGV4dCI6IldlaXRlcmUgRmFocnBsYW5hdXNr/G5mdGUgdW50ZXIgd3d3Lm12di1hdXNrdW5mdC5kZSBvZGVyIG1pdCBkZXIgTVZWLUFwcCIsImhlYWRlclRleHQiOiJBYmZhaHJ0ZW4gZvxyIGhldXRlLCAiLCJsYW5ndWFnZSI6ImRlIiwibGluZSI6IkxpbmllIiwibGl2ZSI6IkxpdmUiLCJzdG9wIjoiSGFsdGVzdGVsbGUiLCJ0cmFjayI6IkdsZWlzIn0sImlzRnVsbHNjcmVlbiI6ZmFsc2UsInN0YXRpb25zIjpbeyJzdGF0aW9uIjp7InVzYWdlIjoic2YiLCJ0eXBlIjoiYW55IiwibmFtZSI6Ik38bmNoZW4sIENhcmwtQW1lcnktUGxhdHoiLCJzdGF0ZWxlc3MiOiI5MTAwMDE0OSIsImFueVR5cGUiOiJzdG9wIiwic29ydCI6IjIiLCJxdWFsaXR5IjoiMjIzIiwiYmVzdCI6IjEiLCJvYmplY3QiOiJDYXJsLUFtZXJ5LVBsYXR6IiwibWFpbkxvYyI6Ik38bmNoZW4iLCJtb2RlcyI6IjQsNSIsInJlZiI6eyJpZCI6IjkxMDAwMTQ5IiwiZ2lkIjoiZGU6MDkxNjI6MTQ5Iiwib21jIjoiOTE2MjAwMCIsInBsYWNlSUQiOiIxIiwicGxhY2UiOiJN/G5jaGVuIiwiY29vcmRzIjoiMTI4OTY5MC4wMDAwMCw1ODcyOTUyLjAwMDAwIn0sImlkIjoiZGU6MDkxNjI6MTQ5In0sImxpbmVzIjpbeyJudW1iZXIiOiIyNSIsInN5bWJvbCI6IjAyMDI1LnN2ZyIsImRpcmVjdGlvbiI6Ikdy/G53YWxkLCBEZXJib2xmaW5nZXIgUGwuIiwic3RhdGVsZXNzIjoic3dtOjAyMDI1Okc6SDowMTYiLCJuYW1lIjoiVHJhbSJ9LHsibnVtYmVyIjoiMjUiLCJzeW1ib2wiOiIwMjAyNS5zdmciLCJkaXJlY3Rpb24iOiJNYXgtV2ViZXItUGxhdHogKEpvaGFubmlzcGwuKSIsInN0YXRlbGVzcyI6InN3bTowMjAyNTpHOlI6MDE2IiwibmFtZSI6IlRyYW0ifSx7Im51bWJlciI6IjU4Iiwic3ltYm9sIjoiMjQwNTguc3ZnIiwiZGlyZWN0aW9uIjoiSGF1cHRiYWhuaG9mIE5vcmQiLCJzdGF0ZWxlc3MiOiJzd206MDMwNTg6RzpSOjAxNiIsIm5hbWUiOiJNZXRyb0J1cyJ9LHsibnVtYmVyIjoiNjgiLCJzeW1ib2wiOiIyNDA2OC5zdmciLCJkaXJlY3Rpb24iOiJIYXVwdGJhaG5ob2YgTm9yZCIsInN0YXRlbGVzcyI6InN3bTowMzA2ODpHOkg6MDE2IiwibmFtZSI6Ik1ldHJvQnVzIn0seyJudW1iZXIiOiJONDUiLCJzeW1ib2wiOiIzM040NS5zdmciLCJkaXJlY3Rpb24iOiJXYWxkcGVybGFjaCAoU/xkKSIsInN0YXRlbGVzcyI6InN3bTozM040NTpHOkg6MDE2IiwibmFtZSI6Ik5hY2h0QnVzIn0seyJudW1iZXIiOiJONDUiLCJzeW1ib2wiOiIzM040NS5zdmciLCJkaXJlY3Rpb24iOiJLYXJsc3BsYXR6IChTdGFjaHVzKSIsInN0YXRlbGVzcyI6InN3bTozM040NTpHOlI6MDE2IiwibmFtZSI6Ik5hY2h0QnVzIn1dLCJhbGxMaW5lcyI6W3sibnVtYmVyIjoiMjUiLCJzeW1ib2wiOiIwMjAyNS5zdmciLCJkaXJlY3Rpb24iOiJHcvxud2FsZCwgRGVyYm9sZmluZ2VyIFBsLiIsInN0YXRlbGVzcyI6InN3bTowMjAyNTpHOkg6MDE2IiwibmFtZSI6IlRyYW0ifSx7Im51bWJlciI6IjI1Iiwic3ltYm9sIjoiMDIwMjUuc3ZnIiwiZGlyZWN0aW9uIjoiTWF4LVdlYmVyLVBsYXR6IChKb2hhbm5pc3BsLikiLCJzdGF0ZWxlc3MiOiJzd206MDIwMjU6RzpSOjAxNiIsIm5hbWUiOiJUcmFtIn0seyJudW1iZXIiOiI1OCIsInN5bWJvbCI6IjI0MDU4LnN2ZyIsImRpcmVjdGlvbiI6IkhhdXB0YmFobmhvZiBOb3JkIiwic3RhdGVsZXNzIjoic3dtOjAzMDU4Okc6UjowMTYiLCJuYW1lIjoiTWV0cm9CdXMifSx7Im51bWJlciI6IjY4Iiwic3ltYm9sIjoiMjQwNjguc3ZnIiwiZGlyZWN0aW9uIjoiSGF1cHRiYWhuaG9mIE5vcmQiLCJzdGF0ZWxlc3MiOiJzd206MDMwNjg6RzpIOjAxNiIsIm5hbWUiOiJNZXRyb0J1cyJ9LHsibnVtYmVyIjoiTjQ1Iiwic3ltYm9sIjoiMzNONDUuc3ZnIiwiZGlyZWN0aW9uIjoiV2FsZHBlcmxhY2ggKFP8ZCkiLCJzdGF0ZWxlc3MiOiJzd206MzNONDU6RzpIOjAxNiIsIm5hbWUiOiJOYWNodEJ1cyJ9LHsibnVtYmVyIjoiTjQ1Iiwic3ltYm9sIjoiMzNONDUuc3ZnIiwiZGlyZWN0aW9uIjoiS2FybHNwbGF0eiAoU3RhY2h1cykiLCJzdGF0ZWxlc3MiOiJzd206MzNONDU6RzpSOjAxNiIsIm5hbWUiOiJOYWNodEJ1cyJ9XSwibGVhZFRpbWVNaW51dGVzIjowfV0sImxpbmVzIjpbXSwibWF4UmVzdWx0cyI6MTAsImZldGNoSW50ZXJ2YWxJbk1pbnV0ZXMiOjIsInNob3dOb3RpZmljYXRpb24iOnRydWV9"></div>
+  <script type="text/javascript" src="https://www.mvv-muenchen.de/typo3conf/ext/sn_mvv_efa/Resources/Public/mvv-monitor/mvv-monitor.min.js"></script>
+</body>
+</html>
